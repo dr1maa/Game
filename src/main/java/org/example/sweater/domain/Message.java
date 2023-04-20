@@ -12,6 +12,7 @@ public class Message {
     private Integer id;
     private  String text;
     private String tag;
+    private User author;
 
     public Message() {
     }
@@ -19,6 +20,14 @@ public class Message {
     public Message(String text, String tag) {
         this.text = text;
         this.tag = tag;
+    }
+
+    public User getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(User author) {
+        this.author = author;
     }
 
     public Integer getId() {

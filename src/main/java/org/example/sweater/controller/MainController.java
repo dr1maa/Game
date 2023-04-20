@@ -1,8 +1,10 @@
-package org.example.sweater;
+package org.example.sweater.controller;
 
+import org.example.sweater.domain.User;
 import org.example.sweater.repository.MessageRepository;
 import org.example.sweater.domain.Message;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +16,7 @@ import java.util.Map;
 
 @Controller
 
-public class GreetingController {
+public class MainController {
     @Autowired
     private MessageRepository messageRepository;
 
@@ -31,7 +33,10 @@ public class GreetingController {
     }
 
     @PostMapping("/main")
-    public String add(@RequestParam String text, @RequestParam String tag, Map<String, Object> model) {
+    public String add(
+            @AuthenticationPrincipal User user,
+            @RequestParam String text,
+            @RequestParam String tag, Map<String, Object> model) {
         Message message = new Message(text, tag);
         messageRepository.save(message);
         Iterable<Message> messages = messageRepository.findAll();
