@@ -4,23 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f27ef72e-0b88-49e5-a559-3ea1480efc45" name="Changes" comment="login&#10;logout&#10;fix add new User">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.ftlh" afterDir="false" />
+    <list default="true" id="f27ef72e-0b88-49e5-a559-3ea1480efc45" name="Changes" comment="mustache to ftl">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/sweater/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/security.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userEdit.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userList.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sweater/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sweater/config/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sweater/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sweater/config/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sweater/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sweater/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sweater/domain/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sweater/domain/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sweater/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sweater/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sweater/domain/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sweater/domain/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sweater/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sweater/domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/greeting.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +36,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -59,17 +63,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/aleksej/Downloads/Game/src/main/resources/templates&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/aleksej/Downloads/Game/src/main/resources/templates",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
@@ -140,8 +144,18 @@
       <option name="project" value="LOCAL" />
       <updated>1681974464876</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="mustache to ftl">
+      <created>1682405218168</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682405218169</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.ftl" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -159,7 +173,8 @@
     <MESSAGE value="fix bags" />
     <MESSAGE value="login&#10;logout" />
     <MESSAGE value="login&#10;logout&#10;fix add new User" />
-    <option name="LAST_COMMIT_MESSAGE" value="login&#10;logout&#10;fix add new User" />
+    <MESSAGE value="mustache to ftl" />
+    <option name="LAST_COMMIT_MESSAGE" value="mustache to ftl" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
